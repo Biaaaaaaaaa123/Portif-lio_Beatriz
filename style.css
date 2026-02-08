@@ -106,7 +106,7 @@ h2 {
         }
 
         .skills div, .software div, .languages div {
-            background-color: #0b0156;
+            background-color: #070133;
             padding: 8px 12px;
             border-radius: 5px;
         }
@@ -125,20 +125,19 @@ h2 {
   text-decoration: none;
   font-size: 24px;
   color: white;
-  background: #001653; /* tom roxo semelhante ao da imagem */
+  background: #08013b; /* tom roxo semelhante ao da imagem */
   padding: 12px 18px;
   border-radius: 15px; /* bordas mais suaves */
   box-shadow: 
-    5px 5px 15px rgba(69, 69, 70, 0.4),
-  
-
+    5px 5px 15px rgba(6, 0, 41, 0.693),
+ 
 }
 
 .voltar:hover {
   transform: none;
   box-shadow: 
     inset 5px 5px 15px rgba(0, 0, 0, 0.5),
-    inset -5px -5px 15px rgba(19, 1, 72, 0.1);
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
 .footer{
     text-align: center; 
