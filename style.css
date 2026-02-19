@@ -19,6 +19,13 @@ body {
 }
 
 /* Cabeçalho */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: nowrap; /* FORÇA ficar lado a lado */
+}
 header {
   background: #011127;
   padding: 20px;
@@ -33,10 +40,12 @@ header p {
   color: #8b949e;
 }
 header nav a {
-  margin: 0 15px;
+  display: inline-block;
   text-decoration: none;
   color: #58a6ff;
   font-weight: bold;
+  padding: 8px 12px;
+  white-space: nowrap; /* evita quebrar o texto */
 }
 
 /* Seções */
@@ -221,10 +230,17 @@ h2 {
   section {
     padding: 20px;
   }
+}
+
+@media (max-width: 480px) {
+  header nav {
+    gap: 15px;
+  }
 
   header nav a {
-    display: block;
-    margin: 10px 0;
+    font-size: 14px;
+    padding: 6px 8px;
   }
+
 
 }
