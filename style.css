@@ -63,13 +63,13 @@ h2 {
   display: flex;           /* coloca imagem e texto lado a lado */
   align-items: center;     /* alinha verticalmente */
   gap: 20px;               /* espaço entre imagem e texto */
-  max-width: 900px;
-  margin: 40px auto;
+  max-width: 900px;        /* largura máxima do conteúdo */
+  margin: 40px auto;       /* centraliza na página */
 }
 
 .perfil-container img {
-  width: 350px;            /* ajuste aqui o tamanho da foto */
-  border-radius:300px;     /* borda arredondada */
+  width: 200px;            /* tamanho da foto */
+  border-radius: 300px;    /* deixa a imagem redonda */
 }
 
 .descricao {
