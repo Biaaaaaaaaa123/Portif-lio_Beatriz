@@ -3,13 +3,19 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: radial-gradient( circle at center, #ab2c9fda, #0b0156 100%),url('pixels.jpg');
-  background-size: cover;
-  background-repeat:no-repeat ;
-  background-position:fixed ;
-   min-height: 100vh;       /* garante que cubra toda a altura da tela */
 
+  background:
+    radial-gradient(circle at center, #ab2c9fda, #0b0156 100%),
+    url('pixels.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* ❗ NÃO use fixed no mobile */
+  
+  min-height: 100vh;
   color: #c9d1d9;
+
+  overflow-x: hidden; /* 🔥 ISSO RESOLVE O CORTE */
 }
 
 /* Cabeçalho */
@@ -60,16 +66,18 @@ h2 {
   transform: translateY(-5px);
 }
 .perfil-container {
-  display: flex;           /* coloca imagem e texto lado a lado */
-  align-items: center;     /* alinha verticalmente */
-  gap: 20px;               /* espaço entre imagem e texto */
-  max-width: 900px;        /* largura máxima do conteúdo */
-  margin: 40px auto;       /* centraliza na página */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px; /* evita encostar na borda no celular */
 }
 
 .perfil-container img {
-  width: 200px;            /* tamanho da foto */
-  border-radius: 300px;    /* deixa a imagem redonda */
+  width: 220px;
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .descricao {
@@ -202,4 +210,21 @@ h2 {
 
 .contato-item a:hover {
   color: #58a6ff;
+}
+@media (max-width: 768px) {
+
+  .perfil-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
 }
