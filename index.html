@@ -3,42 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre - Beatriz</title>
+  <title>Beatriz Kakuta | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-    
-   
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home">Beatriz Kakuta</a>
+      <nav class="main-nav">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="header-cta" href="#contato">Fale comigo</a>
+    </div>
   </header>
 
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Engenharia Mecatrônica · Designer · Dev</p>
+        <h1>Olá, eu sou <span class="name-beatriz">Beatriz</span> Kykue Kakuta.</h1>
+        <p class="hero-text">Estudante de Engenharia Mecatrônica apaixonada por tecnologia, design e programação. Combino o rigor da engenharia com a criatividade do design para criar projetos que unem estética e funcionalidade.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Ver meus projetos</a>
+          <a class="btn btn-outline" href="#sobre">Sobre mim</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-badge">Robótica & Design</div>
+        <img src="foto_perfil.jpg" alt="Foto de Beatriz Kakuta" class="hero-image">
+      </div>
+    </section>
 
+    <section id="sobre" class="section section-sobre">
+      <div class="section-header">
+        <span class="section-label">Sobre</span>
+        <h2>Engenharia com <span>alma criativa</span></h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <p>Sou Beatriz Kykue Kakuta, estudante de Engenharia Mecatrônica com paixão genuína por tecnologia, design e inovação. Acredito que engenharia e design caminham juntos um produto é verdadeiramente completo quando funciona impecavelmente e é belo de usar.</p>
+          <p>Sou um desenvolvedor focado em projetar soluções inteligentes e circuitos de alta precisão, sempre guiado pelo compromisso com a excelência. Fora do ecossistema tradicional de hardware e código, dedico minha energia a explorar o design de UI/UX, dominar ferramentas emergentes e mergulhar no universo da robótica e automação. Acredito que a tecnologia do futuro nasce da união entre eficiência técnica e uma experiência de usuário impecável.
+          <div class="tags-row">
+            <span>Mecatrônica</span>
+            <span>Programação</span>
+            <span>UI Design</span>
+            <span>Robótica</span>
+            <span>Eletrônica</span>
+          </div>
+        </div>
+        <div class="sobre-card">
+          <div class="sobre-card-title">Apaixonada por</div>
+          <p>Tecnologia, Design & Inovação</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-<div class="perfil-container">
-  <img src="foto_perfil.jpg" alt="Foto de perfil">
-  <div class="texto-sobre">
-     <h1>Beatriz Kakuta</h1> <p>Instrutora de Tecnologia | Desenvolvedora</p>
-    <p>
-Olá!
-Sou Beatriz, instrutora de tecnologia e desenvolvedora, apaixonada por inovação e soluções digitais. 
-Tenho experiência em programação, robótica e projetos práticos, e busco uma oportunidade para aplicar minha criatividade,
- dedicação e entusiasmo no ensino e desenvolvimento de tecnologias que impactem positivamente as pessoas.
-    </p>
-  </div>
-</div>
+    <section id="projetos" class="section section-projects">
+      <div class="section-header">
+        <span class="section-label">Portfólio</span>
+        <h2>Projetos <span>selecionados</span></h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <p class="project-category">Mecatrônica</p>
+          <h3>Braço Robótico — Projeto de Graduação</h3>
+          <p>Projeto acadêmico para o desenvolvimento de um braço robótico, focado em controle de movimentos, precisão e automação de tarefas industriais.</p>
+          <span class="project-year">2024</span>
+        </article>
+        <article class="project-card">
+          <p class="project-category">UI / UX Design</p>
+          <h3>App de Monitoramento Industrial</h3>
+          <p>Criação de interface para aplicativo de controle e monitoramento de sistemas em tempo real, com foco em usabilidade e visual clean.</p>
+          <span class="project-year">2024</span>
+        </article>
+        <article class="project-card">
+          <p class="project-category">Extensão</p>
+          <h3>Enatech - Projeto de Extensão</h3>
+          <p>Desenvolvimento de aplicativos móveis com Flutter, priorizando design e experiência do usuário para soluções educacionais e inovadoras.</p>
+        </article>
+        <article class="project-card">
+          <p class="project-category">Educação</p>
+          <h3>Instrutora de Tecnologia Integrada</h3>
+          <p>Ministração de aulas práticas e teóricas em programação, Arduino, eletrônica básica, modelagem 3D, drones e robótica com LEGO.</p>
+        </article>
+      </div>
+    </section>
 
-  </section>
-<div class="footer">
-    <footer> 
+    <section id="habilidades" class="section section-skills">
+      <div class="section-header">
+        <span class="section-label">Habilidades</span>
+        <h2>O que eu sei fazer <span>bem</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-list">
+          <div class="skill-item"><span>Engenharia Mecatrônica</span><span>88%</span></div>
+          <div class="skill-bar"><div style="width:88%"></div></div>
+          <div class="skill-item"><span>Programação (Python / C++)</span><span>82%</span></div>
+          <div class="skill-bar"><div style="width:82%"></div></div>
+          <div class="skill-item"><span>UI / UX Design</span><span>78%</span></div>
+          <div class="skill-bar"><div style="width:78%"></div></div>
+          <div class="skill-item"><span>Robótica & Automação</span><span>80%</span></div>
+          <div class="skill-bar"><div style="width:80%"></div></div>
+          <div class="skill-item"><span>Design Gráfico</span><span>72%</span></div>
+          <div class="skill-bar"><div style="width:72%"></div></div>
+          <div class="skill-item"><span>Eletrônica & Arduino</span><span>85%</span></div>
+          <div class="skill-bar"><div style="width:85%"></div></div>
+        </div>
+        <aside class="skills-panel">
+          <div class="panel-block">
+            <h3>Ferramentas & Tecnologias</h3>
+            <div class="tags-grid">
+              <span>Python</span>
+              <span>C++</span>
+              <span>Arduino</span>
+              <span>Figma</span>
+              <span>SolidWorks</span>
+              <span>AutoCAD</span>
+              <span>React</span>
+              <span>MATLAB</span>
+            </div>
+          </div>
+          <div class="panel-block panel-learning">
+            <h3>Atualmente aprendendo</h3>
+            <div class="learning-tags">
+              <span>Machine Learning</span>
+              <span>ROS (Robot OS)</span>
+              <span>Figma Avançado</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-contact">
+      <div class="section-header">
+        <span class="section-label">Contato</span>
+        <h2>Vamos conversar?</h2>
+      </div>
+      <div class="contact-intro">
+        <p>Estou sempre aberta para novas oportunidades em tecnologia, design e educação.<br>Sinta-se livre para entrar em contato através de qualquer um dos canais abaixo.</p>
+      </div>
+      <div class="contact-methods">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=biakakuta@gmail.com&su=Contato%20do%20Portfólio&body=Olá%20Beatriz," target="_blank" class="contact-method">
+          <div class="contact-method-icon"><img src="email.png" alt="Gmail"></div>
+          <h4>Gmail</h4>
+          <p>biakakuta@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/beatrizkakuta" target="_blank" class="contact-method">
+          <div class="contact-method-icon"><img src="linkedin.png" alt="LinkedIn"></div>
+          <h4>LinkedIn</h4>
+          <p>beatrizkakuta</p>
+        </a>
+        <a href="https://github.com/Biaaaaaaaaa123" target="_blank" class="contact-method contact-method-github">
+          <div class="contact-method-icon"><img src="github.jpg" alt="Github"></div>
+          <h4>Github</h4>
+          <p>Biaaaaaaaaa123</p>
+        </a>
+        <a href="currículo.pdf" target="_blank" download class="contact-method">
+          <div class="contact-method-icon"><img src="doc.jpeg" alt="Currículo"></div>
+          <h4>Currículo</h4>
+          <p>Download PDF</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <p>© 2025 - Portfólio de Beatriz | Feito com ❤️ e Tecnologia</p>
   </footer>
-</div>
-  
+
+  <script src="script.js" defer></script>
 </body>
 </html>
