@@ -1,9 +1,13 @@
-// Rolagem suave ao clicar no menu
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const targetId = e.target.getAttribute('href').substring(1);
-    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+const navLinks = document.querySelectorAll('a[href^="#"]');
+navLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    const targetId = link.getAttribute('href');
+    if (targetId.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   });
 });
-// Função para voltar para a página anterior
